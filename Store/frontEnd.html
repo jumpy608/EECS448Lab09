@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> EECS 448 - Lab 08 - Storepage </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    
+    <body>
+        <header>
+            <h1>Welcome to my shop! Stay a while!</h1>
+            <p></p>
+        </header>
+
+        <main>
+            <div id="background"></div>
+            <form action="backEnd.php" method="post">
+                <b>Get an Ace up your sleeve!</b><br>
+                    Ace of Hearts, $1<br>
+                    Quantity: <input type="number" id="hearts" name="hearts" min="0"><br><br>
+
+                    Ace of Clubs, $1<br>
+                    Quantity: <input type="number" id="clubs" name="clubs" min="0"><br><br>
+
+                    Ace of Diamonds, $1<br>
+                    Quantity: <input type="number" id="diamonds" name="diamonds" min="0"><br><br>
+
+                    Ace of Spades, $2<br>
+                    Quantity: <input type="number" id="spades" name="spades" min="0"><br><br>
+
+                    <b>Enter your Sign On Information:</b><br>
+                        User ID: <input type="text" name="userID" id="userID"><br>
+                        Password: <input type="text" name="password" id="password"><br><br>
+                    
+                    <b>Please Choose an Option for Shipping:</b> <br>
+                        <input type="radio" name="shipping" id="free" value="Free 7 Day">Free 7 Day<br>
+                        <input type="radio" name="shipping" id="50" value="$50 Over Night">$50.00 Over Night<br>
+                        <input type="radio" name="shipping" id="5" value="$5 Three Day">$5.00 Three Day<br>
+
+                    <input type="submit" id="submit" value="Submit Order">
+                    <input type="reset">
+            </form>
+        </main>
+
+        <!--Link in the JS script to ensure that everything is satisfied (no errors)-->
+        <script src="formChecker.js"></script>
+    </body>
+</html>
